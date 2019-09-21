@@ -115,6 +115,13 @@ display: inline-block;
 	font-size:40;
 	color:#ffc0cb;
 }
+
+.form
+{
+font-family: ubi-bold;
+font-size:12;
+color:white;
+}
 	</style>
 	</head>
 	<body bgcolor= "#282923">
@@ -125,7 +132,7 @@ display: inline-block;
 				<img class= "logo" src= "xyzapklogo.png">
 				<a href= "index.html"><li>HOME</li></a>
 					<a href= "#about"><li>ABOUT</li></a>
-						<a href= "contact.html"><li>CONTACT</li></a>
+						<a href= "#contact"><li>CONTACT</li></a>
 						<a href= "downloads.html"><li>DOWNLOADS</li></a>
 						</ul>
 
@@ -135,14 +142,24 @@ display: inline-block;
 <br>
 <br>
 
-		<a name= "about"><p class= "about" align= "center">WELCOME TO MY WEBSITE!</p></a>
-		<p class= "welcome" align= "center" class= "abot">On this website you will be able to download all kinds of apps/games for android<br>
-			for absolutely free!
-		</p>
-
+		<p class= "about" align= "center">CONTACT</p>
 		<br>
-		<p align= "center">
-		<a href= "downloads.html"><button class="explbtn">EXPLORE</button></a>
+		
+		<form class= "form" align= "center" name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>   
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button class="explbtn" type="submit">Send</button>
+  </p>
+</form>
 	</p>
 	<br>
 	<br>
